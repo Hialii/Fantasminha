@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(57, 57, 57);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(154, 5, 240), rgb(37, 147, 206), rgb(240, 236, 163));
+
+}
+
+.nuvem {
+    position: absolute;
+    width: 500px;
+    animation: nuvem-animation 20s infinite linear;
+}
+
+
+.morcego{
+    position: absolute;
+    width: 80px;
+    bottom: 40%;
+    animation: morcego-animation 5s infinite linear;
+}
+
+.morcego2 {
+    position: absolute;
+    width: 80px;
+    bottom: 70%;
+    animation: morcego-animation 5.7s infinite linear;
+}
+
+
+.poçao {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: poçao-animation 2.5s infinite linear;
+}
+
+.fantasma {
+    position: absolute;
+    bottom: 0;
+    width: 90px;
+
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px ;
+    }
+
+    50% {
+        bottom: 180px ;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+    
+}
+
+@keyframes poçao-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+    
+}
+
+@keyframes nuvem-animation {
+    from {
+        right: -450px; ;
+    }
+    
+    to {
+        right:100% ;
+    }
+    
+}
+
+@keyframes morcego-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+    
+}
